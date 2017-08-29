@@ -1,0 +1,30 @@
+/*
+ * actorconnections.txt
+ * Author: Thomas An
+ * Date:   11-17-16
+ *
+ * contains description of problem solved in extension
+ */
+
+ In my extension, I used a DFS search based algorithm to find
+ the strongly linked components of the data base I inputted.
+ In my case, the data set I used is a record of retweets. The
+ problem I solve is essentially how many people you can affect,
+ or how many people can potentially see a single persons tweet.
+ In the Higgs Boson sample, the largest SCC size was 984 and 
+ in the combined twitters sample, the largest SCC size was
+ 68413. So in the Higgs Boson sample, roughly 984 people
+ had some sort of tweet exchange between each other. Same for
+ the combined twitter sample
+I tested this sample by manually drawing out my graph, and performing
+the algorithm by hand. Analyzing, how big the largest SCC was.
+Of course, I could return the first COUPLE largest of SCC's but
+that's not the problem I am trying to solve. I also found that
+finding that largest SCC, in terms of twitter feed data, is probably
+the more useless of the bunch of information.
+
+ TO RUN:
+ To run the code, just compile and execute with 
+ './extension "file1"'
+ with "file1" being the twitter file to analyze.
+ I will upload the "small_text_graph.txt" file to test with. 
